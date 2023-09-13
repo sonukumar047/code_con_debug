@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Converter And Debugger</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Code Converter, Debugger & Optimizer</h1>
+    </div>
+    <div class="options-section">
+      <h2>Options</h2>
+      <div class="options">
+        <label for="conversionOption">Convert:</label>
+        <button id ="mybtn1" type ="button">Convert</button>
+        <select id="conversionOption">
+          <option value="Java">Java</option>
+          <option value="c++">c++</option>
+          <option value="python">python</option>
+          <option value="javaScript">javaScript</option>
+        </select>
+      </div>
+
+      <div class="options">
+        <button id ="mybtn2" type ="button">Debug</button>
+      </div>
+
+      <div class="options">
+        <button id ="mybtn3" type ="button">Optimize</button>
+      </div>
+
+      <div class="options">
+        <button id ="mybtn4" type ="button">findTimeComplexity</button>
+      </div>
+
+      <div class="code-editor">
+        <h3>Code Input:</h3>
+        <textarea id="codeInput" placeholder="Enter your code here"></textarea>
+      </div>
+    </div>
+
+    <div class="response-section">
+      <h2>Response</h2>
+      <div class="response">
+        <h3>Output:</h3>
+        <div id="responseDiv"> <!-- Response content will be displayed here --> </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
